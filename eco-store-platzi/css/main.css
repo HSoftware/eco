@@ -14,7 +14,9 @@ nav {
   width: auto;
   padding: 45px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   color: #7c6a0a;
 }
 nav p {
@@ -36,11 +38,17 @@ article {
   padding-right: 45px;
   padding-top: 70px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 article .impact-section {
   display: flex;
   flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding-top: 50px;
   gap: 25px;
 }
@@ -59,6 +67,9 @@ article button {
   color: white;
   font-size: 1rem;
 }
+article button:hover {
+  transform: scale(1.1);
+}
 article img {
   width: 25vw;
   border-radius: 19px;
@@ -67,7 +78,7 @@ article img {
 section {
   width: auto;
   height: auto;
-  padding: 60px;
+  padding: 30px 60px;
 }
 section h2 {
   color: #7c6a0a;
@@ -77,23 +88,24 @@ section .healtcare, section .furniture {
   padding-bottom: 60px;
 }
 section .healtcare h2, section .furniture h2 {
-  font-weight: 300;
+  font-weight: 400;
   padding-bottom: 60px;
 }
 section .healtcare .card-section, section .furniture .card-section {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: auto;
   height: auto;
-  justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
   -moz-column-gap: 100px;
        column-gap: 100px;
   row-gap: 80px;
 }
 section .healtcare .product-card, section .furniture .product-card {
   width: 14vw;
-  height: 45vh;
+  height: 48vh;
   background-color: #ffdac6;
   color: #7c6a0a;
   padding: 20px;
@@ -123,6 +135,64 @@ section .healtcare .product-card .product-image img, section .furniture .product
      object-fit: cover;
   border-radius: 6px;
 }
+section .furniture .product-card {
+  background-color: #babd8d;
+  color: white;
+}
+
+.about-us {
+  padding-bottom: 60px;
+}
+.about-us h2 {
+  font-weight: 300;
+  padding-bottom: 60px;
+}
+.about-us .mission-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-us .mission-section .earth, .about-us .mission-section .innovation {
+  width: 30vw;
+  display: flex;
+  gap: 40px;
+  color: #e86424;
+}
+.about-us .mission-section .earth p, .about-us .mission-section .innovation p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.about-us .mission-section .earth img, .about-us .mission-section .innovation img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.gallery {
+  padding-bottom: 60px;
+}
+.gallery h2 {
+  padding-bottom: 60px;
+  font-weight: 300;
+}
+.gallery .gallery-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .gallery-images img {
+  width: 28vw;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  -o-object-position: 5px 35%;
+     object-position: 5px 35%;
+}
+.gallery .gallery-images img:hover {
+  transform: scale(1.1);
+}
+
 footer {
   background-color: #fa9500;
   width: 100%;
