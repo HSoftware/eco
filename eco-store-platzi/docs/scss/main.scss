@@ -3,6 +3,8 @@ $secondary-color: #ffdac6;
 $tertiary-color: #babd8d;
 $quaternary-color: #fa9500;
 $primary-text-color: #7c6a0a;
+$text-color: #e86424;
+
 $paragraph-size: 1.5rem;
 
 $font-stack: 'IBM Plex Sans', sans-serif;
@@ -170,12 +172,11 @@ section {
 
     .mission-section {
         @include flexCenter(row, space-evenly, center );
-
         .earth {
             width: 30vw;
             display: flex;
             gap: 40px;
-            color: #e86424;
+            color: $text-color;
             p {
                 text-align: center;
                 font-size: $paragraph-size;
@@ -212,6 +213,13 @@ section {
     }
 }
 
+.location {
+    color: $text-color;
+    .map {
+        @include flexCenter(row, center, center);
+        padding-bottom: 50px;
+    }
+}
 
 footer {
     background-color: $quaternary-color;

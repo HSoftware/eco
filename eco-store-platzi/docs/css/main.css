@@ -193,6 +193,17 @@ section .furniture .product-card {
   transform: scale(1.1);
 }
 
+.location {
+  color: #e86424;
+}
+.location .map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
 footer {
   background-color: #fa9500;
   width: 100%;
